@@ -1,0 +1,678 @@
+import 'package:flutter/material.dart';
+
+class HomePage extends StatefulWidget {
+  const HomePage({Key? key}) : super(key: key);
+
+  @override
+  State<HomePage> createState() => _HomePageState();
+}
+
+class _HomePageState extends State<HomePage> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Color(0xFF000000),
+        title: Text(
+          'The Momi',
+          style: TextStyle(
+            color: Color(0xFFE8CB79),
+          ),
+        ),
+        centerTitle: false,
+        elevation: 0,
+        actions: [
+          Icon(
+            Icons.account_circle,
+            size: 45,
+            color: Color(0xFFE8CB79),
+          )
+        ],
+      ),
+      body: SingleChildScrollView(
+        child: Container(
+          decoration: BoxDecoration(
+            color: Color(0xFF000000),
+          ),
+          child: Column(
+            children: [
+              Container(
+                height: 300,
+                decoration: BoxDecoration(
+                  color: Color(0xFF000000),
+                ),
+                alignment: AlignmentDirectional.center,
+                child: Text(
+                  "Ini Graphic",
+                  style: TextStyle(
+                    color: Color(0xFFE8CB79),
+                    fontSize: 16,
+                  ),
+                ),
+              ),
+              Container(
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(12),
+                  color: Color(0xFFE8CB79),
+                ),
+                child: Column(
+                  children: [
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        Container(
+                          margin: EdgeInsets.fromLTRB(30.0, 20.0, 15.0, 0.0),
+                          child:
+                          Row(
+                            children: [
+                              Icon(Icons.date_range,
+                                color: Color(0xFF000000),
+                                size: 33,
+                              ),
+                              Container(
+                                margin: EdgeInsets.fromLTRB(10.0, 0.0, 0.0, 0.0),
+                                child:
+                                Text("21 Sept 2022, 13:55,00",
+                                  style: TextStyle(
+                                    fontSize: 16,
+                                    color: Color(0xFF000000),
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Container(
+                          height: 150,
+                          width: 150,
+                          margin: EdgeInsets.fromLTRB(30.0, 20.0, 15.0, 0.0),
+                          //.symmetric(vertical: 30.0, horizontal: 30.0),
+                          padding: EdgeInsets.all(20),
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(12),
+                            color: Color(0xFF000000),
+                          ),
+                          child: Column(
+                            children: [
+                              Text(
+                                "Sensor 1",
+                                textAlign: TextAlign.center,
+                                style: TextStyle(
+                                  fontSize: 16,
+                                  color: Color(0xFFE8CB79),
+                                ),
+                              ),
+                              SizedBox(height: 15),
+                              Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceEvenly,
+                                children: [
+                                  Icon(
+                                    Icons.thermostat,
+                                    color: Color(0xFFE8CB79),
+                                    size: 33,
+                                  ),
+                                  Icon(
+                                    Icons.water_drop_rounded,
+                                    color: Color(0xFFE8CB79),
+                                    size: 33,
+                                  ),
+                                ],
+                              ),
+                              SizedBox(height: 15),
+                              Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceAround,
+                                children: [
+                                  Text(
+                                    "76°C",
+                                    style: TextStyle(
+                                      fontSize: 20,
+                                      color: Color(0xFFE8CB79),
+                                    ),
+                                  ),
+                                  Text(
+                                    "76%",
+                                    style: TextStyle(
+                                      fontSize: 20,
+                                      color: Color(0xFFE8CB79),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ],
+                          ),
+                        ),
+                        Container(
+                          height: 150,
+                          width: 150,
+                          margin: EdgeInsets.fromLTRB(15.0, 20.0, 30.0, 0.0),
+                          padding: EdgeInsets.all(20),
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(12),
+                            color: Color(0xFF000000),
+                          ),
+                          child: Column(
+                            children: [
+                              Text(
+                                "Sensor 2",
+                                textAlign: TextAlign.center,
+                                style: TextStyle(
+                                  fontSize: 16,
+                                  color: Color(0xFFE8CB79),
+                                ),
+                              ),
+                              SizedBox(height: 15),
+                              Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceEvenly,
+                                children: [
+                                  Icon(
+                                    Icons.thermostat,
+                                    color: Color(0xFFE8CB79),
+                                    size: 33,
+                                  ),
+                                  Icon(
+                                    Icons.water_drop_rounded,
+                                    color: Color(0xFFE8CB79),
+                                    size: 33,
+                                  ),
+                                ],
+                              ),
+                              SizedBox(height: 15),
+                              Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceAround,
+                                children: [
+                                  Text(
+                                    "76°C",
+                                    style: TextStyle(
+                                      fontSize: 20,
+                                      color: Color(0xFFE8CB79),
+                                    ),
+                                  ),
+                                  Text(
+                                    "76%",
+                                    style: TextStyle(
+                                      fontSize: 20,
+                                      color: Color(0xFFE8CB79),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Container(
+                          height: 150,
+                          width: 150,
+                          margin: EdgeInsets.fromLTRB(30.0, 30.0, 15.0, 0.0),
+                          padding: EdgeInsets.all(20),
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(12),
+                            color: Color(0xFF000000),
+                          ),
+                          child: Column(
+                            children: [
+                              Text(
+                                "Sensor 3",
+                                textAlign: TextAlign.center,
+                                style: TextStyle(
+                                  fontSize: 16,
+                                  color: Color(0xFFE8CB79),
+                                ),
+                              ),
+                              SizedBox(height: 15),
+                              Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceEvenly,
+                                children: [
+                                  Icon(
+                                    Icons.thermostat,
+                                    color: Color(0xFFE8CB79),
+                                    size: 33,
+                                  ),
+                                  Icon(
+                                    Icons.water_drop_rounded,
+                                    color: Color(0xFFE8CB79),
+                                    size: 33,
+                                  ),
+                                ],
+                              ),
+                              SizedBox(height: 15),
+                              Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceAround,
+                                children: [
+                                  Text(
+                                    "76°C",
+                                    style: TextStyle(
+                                      fontSize: 20,
+                                      color: Color(0xFFE8CB79),
+                                    ),
+                                  ),
+                                  Text(
+                                    "76%",
+                                    style: TextStyle(
+                                      fontSize: 20,
+                                      color: Color(0xFFE8CB79),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ],
+                          ),
+                        ),
+                        Container(
+                          height: 150,
+                          width: 150,
+                          margin: EdgeInsets.fromLTRB(15.0, 30.0, 30.0, 0.0),
+                          padding: EdgeInsets.all(20),
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(12),
+                            color: Color(0xFF000000),
+                          ),
+                          child: Column(
+                            children: [
+                              Text(
+                                "Sensor 4",
+                                textAlign: TextAlign.center,
+                                style: TextStyle(
+                                  fontSize: 16,
+                                  color: Color(0xFFE8CB79),
+                                ),
+                              ),
+                              SizedBox(height: 15),
+                              Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceEvenly,
+                                children: [
+                                  Icon(
+                                    Icons.thermostat,
+                                    color: Color(0xFFE8CB79),
+                                    size: 33,
+                                  ),
+                                  Icon(
+                                    Icons.water_drop_rounded,
+                                    color: Color(0xFFE8CB79),
+                                    size: 33,
+                                  ),
+                                ],
+                              ),
+                              SizedBox(height: 15),
+                              Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceAround,
+                                children: [
+                                  Text(
+                                    "76°C",
+                                    style: TextStyle(
+                                      fontSize: 20,
+                                      color: Color(0xFFE8CB79),
+                                    ),
+                                  ),
+                                  Text(
+                                    "76%",
+                                    style: TextStyle(
+                                      fontSize: 20,
+                                      color: Color(0xFFE8CB79),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Container(
+                          height: 150,
+                          width: 150,
+                          margin: EdgeInsets.fromLTRB(30.0, 30.0, 15.0, 0.0),
+                          padding: EdgeInsets.all(20),
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(12),
+                            color: Color(0xFF000000),
+                          ),
+                          child: Column(
+                            children: [
+                              Text(
+                                "Sensor 5",
+                                textAlign: TextAlign.center,
+                                style: TextStyle(
+                                  fontSize: 16,
+                                  color: Color(0xFFE8CB79),
+                                ),
+                              ),
+                              SizedBox(height: 15),
+                              Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceEvenly,
+                                children: [
+                                  Icon(
+                                    Icons.thermostat,
+                                    color: Color(0xFFE8CB79),
+                                    size: 33,
+                                  ),
+                                  Icon(
+                                    Icons.water_drop_rounded,
+                                    color: Color(0xFFE8CB79),
+                                    size: 33,
+                                  ),
+                                ],
+                              ),
+                              SizedBox(height: 15),
+                              Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceAround,
+                                children: [
+                                  Text(
+                                    "76°C",
+                                    style: TextStyle(
+                                      fontSize: 20,
+                                      color: Color(0xFFE8CB79),
+                                    ),
+                                  ),
+                                  Text(
+                                    "76%",
+                                    style: TextStyle(
+                                      fontSize: 20,
+                                      color: Color(0xFFE8CB79),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ],
+                          ),
+                        ),
+                        Container(
+                          height: 150,
+                          width: 150,
+                          margin: EdgeInsets.fromLTRB(15.0, 30.0, 30.0, 0.0),
+                          padding: EdgeInsets.all(20),
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(12),
+                            color: Color(0xFF000000),
+                          ),
+                          child: Column(
+                            children: [
+                              Text(
+                                "Sensor 6",
+                                textAlign: TextAlign.center,
+                                style: TextStyle(
+                                  fontSize: 16,
+                                  color: Color(0xFFE8CB79),
+                                ),
+                              ),
+                              SizedBox(height: 15),
+                              Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceEvenly,
+                                children: [
+                                  Icon(
+                                    Icons.thermostat,
+                                    color: Color(0xFFE8CB79),
+                                    size: 33,
+                                  ),
+                                  Icon(
+                                    Icons.water_drop_rounded,
+                                    color: Color(0xFFE8CB79),
+                                    size: 33,
+                                  ),
+                                ],
+                              ),
+                              SizedBox(height: 15),
+                              Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceAround,
+                                children: [
+                                  Text(
+                                    "76°C",
+                                    style: TextStyle(
+                                      fontSize: 20,
+                                      color: Color(0xFFE8CB79),
+                                    ),
+                                  ),
+                                  Text(
+                                    "76%",
+                                    style: TextStyle(
+                                      fontSize: 20,
+                                      color: Color(0xFFE8CB79),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Container(
+                          height: 150,
+                          width: 150,
+                          margin: EdgeInsets.fromLTRB(30.0, 30.0, 15.0, 30.0),
+                          padding: EdgeInsets.all(20),
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(12),
+                            color: Color(0xFF000000),
+                          ),
+                          child: Column(
+                            children: [
+                              Text(
+                                "Sensor 7",
+                                textAlign: TextAlign.center,
+                                style: TextStyle(
+                                  fontSize: 16,
+                                  color: Color(0xFFE8CB79),
+                                ),
+                              ),
+                              SizedBox(height: 15),
+                              Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceEvenly,
+                                children: [
+                                  Icon(
+                                    Icons.thermostat,
+                                    color: Color(0xFFE8CB79),
+                                    size: 33,
+                                  ),
+                                  Icon(
+                                    Icons.water_drop_rounded,
+                                    color: Color(0xFFE8CB79),
+                                    size: 33,
+                                  ),
+                                ],
+                              ),
+                              SizedBox(height: 15),
+                              Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceAround,
+                                children: [
+                                  Text(
+                                    "76°C",
+                                    style: TextStyle(
+                                      fontSize: 20,
+                                      color: Color(0xFFE8CB79),
+                                    ),
+                                  ),
+                                  Text(
+                                    "76%",
+                                    style: TextStyle(
+                                      fontSize: 20,
+                                      color: Color(0xFFE8CB79),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ],
+                          ),
+                        ),
+                        Container(
+                          height: 150,
+                          width: 150,
+                          margin: EdgeInsets.fromLTRB(15.0, 30.0, 30.0, 30.0),
+                          padding: EdgeInsets.all(20),
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(12),
+                            color: Color(0xFF000000),
+                          ),
+                          child: Column(
+                            children: [
+                              Text(
+                                "Sensor 8",
+                                textAlign: TextAlign.center,
+                                style: TextStyle(
+                                  fontSize: 16,
+                                  color: Color(0xFFE8CB79),
+                                ),
+                              ),
+                              SizedBox(height: 15),
+                              Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceEvenly,
+                                children: [
+                                  Icon(
+                                    Icons.thermostat,
+                                    color: Color(0xFFE8CB79),
+                                    size: 33,
+                                  ),
+                                  Icon(
+                                    Icons.water_drop_rounded,
+                                    color: Color(0xFFE8CB79),
+                                    size: 33,
+                                  ),
+                                ],
+                              ),
+                              SizedBox(height: 15),
+                              Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceAround,
+                                children: [
+                                  Text(
+                                    "76°C",
+                                    style: TextStyle(
+                                      fontSize: 20,
+                                      color: Color(0xFFE8CB79),
+                                    ),
+                                  ),
+                                  Text(
+                                    "76%",
+                                    style: TextStyle(
+                                      fontSize: 20,
+                                      color: Color(0xFFE8CB79),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+child: Container(
+          color: Color(0xFFE8CB79),
+          child: ListView(
+            children: [
+              DrawerHeader(
+                child: Center(
+                  child: Text(
+                    "The Momi",
+                    style: TextStyle(
+                      fontSize: 30,
+                    ),
+                  ),
+                ),
+              ),
+              ListTile(
+                contentPadding: EdgeInsets.fromLTRB(20, 0, 0, 0),
+                leading: Icon(
+                  Icons.thermostat,
+                  size: 35,
+                  color: Color(0xFF000000),
+                ),
+                title: Text(
+                  "Gudang FGWC",
+                  style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                onTap: () {
+                  setState(() {
+                    drawerLokasi = "FGWC";
+                  });
+                  showShortToast();
+                },
+              ),
+              ListTile(
+                contentPadding: EdgeInsets.fromLTRB(20, 0, 0, 0),
+                leading: Icon(
+                  Icons.thermostat,
+                  size: 35,
+                  color: Color(0xFF000000),
+                ),
+                title: Text(
+                  "Gudang Mangli",
+                  style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                onTap: () {
+                  setState(() {
+                    drawerLokasi = "Mangli";
+                    getData();
+                  });
+                  showShortToast();
+                },
+              ),
+              ListTile(
+                contentPadding: EdgeInsets.fromLTRB(20, 0, 0, 0),
+                leading: Icon(
+                  Icons.bug_report,
+                  size: 35,
+                  color: Color(0xFF000000),
+                ),
+                title: Text(
+                  "Form Lasio",
+                  style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                  ),
+                  selectionColor: Color(0xFF000000),
+                ),
+                onTap: () {
+                  Navigator.of(context).push(
+                      MaterialPageRoute(builder: (context) => LasioMenu()));
+                },
+              ),
+            ],
+          ),
+        ),

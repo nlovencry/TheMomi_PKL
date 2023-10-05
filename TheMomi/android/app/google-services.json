@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "463718641246",
+    "project_id": "the-momi",
+    "storage_bucket": "the-momi.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:463718641246:android:fbe4c61f9b8956a79bcecf",
+        "android_client_info": {
+          "package_name": "com.example.the_momi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "463718641246-00nomv49qq8qt9qesudbdsgsr8g9np8m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0dxxysuRlqGd3ZzKqpe1MwXuuzy0E7AY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "463718641246-00nomv49qq8qt9qesudbdsgsr8g9np8m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
